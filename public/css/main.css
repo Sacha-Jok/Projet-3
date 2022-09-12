@@ -1,0 +1,13 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  font-family: 'Shrikhand', sans-serif; }
+
+img {
+  width: 40%;
+  border-radius: 20px; }
+
+* {
+  margin: 0;
+  padding: 0; }

@@ -1,0 +1,53 @@
+.step {
+    width: auto;
+    height: auto;
+    & h2{
+        margin: 30px 20px;
+    }
+    & ul{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    & li{
+        & a{
+            display: inline-block;
+            width: 70%;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding: 25px 25px;    
+            border-radius: 18px;
+            text-decoration: none;
+            background-color: #f6f6f6;
+            color: black;
+
+            &:hover{
+                background-color: rgba($primary-color, 0.1);
+            }
+            &:hover > i{
+                color: $primary-color;
+            }
+        }
+    
+        & i{
+            padding-right: 10px;
+        }
+    }
+    &-number{
+        text-align: left;
+        position: relative;
+        padding: 5px 10px;
+        margin: -15px;
+        color: white;
+        background-color: $primary-color;
+        border-radius: 25px;
+    }
+}
+
+.restaurant{
+    width: auto;
+    & h2{
+        margin: 30px 20px;
+    }
+}

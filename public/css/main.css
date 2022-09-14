@@ -4,9 +4,146 @@ body {
 h1 {
   font-family: 'Shrikhand', sans-serif; }
 
-img {
-  width: 40%;
-  border-radius: 20px; }
+.btn {
+  color: white;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC); }
+  .btn:hover {
+    transition: 0.5s;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    filter: brightness(105%); }
+
+.restaurant-bubble {
+  margin: 20px 20px;
+  border-radius: 20px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; }
+  .restaurant-bubble img {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 140px; }
+  .restaurant-bubble a {
+    color: black;
+    text-decoration: none; }
+  .restaurant-bubble .restaurant-bubble-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .restaurant-bubble .restaurant-bubble-sub-txt {
+      margin: 8px 0 8px 15px; }
+      .restaurant-bubble .restaurant-bubble-sub-txt h4 {
+        font-weight: 300; }
+    .restaurant-bubble .restaurant-bubble-sub i {
+      margin-right: 15px;
+      color: lightgray;
+      font-size: 20px; }
+      .restaurant-bubble .restaurant-bubble-sub i:hover {
+        color: rgba(255, 121, 218, 0.4); }
+  .restaurant-bubble input[type=checkbox] {
+    display: none; }
+    .restaurant-bubble input[type=checkbox] + label {
+      display: inline-block;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out; }
+    .restaurant-bubble input[type=checkbox]:checked + label {
+      background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+      background-clip: text; }
+    .restaurant-bubble input[type=checkbox]:checked + label > i {
+      color: transparent; }
+
+ul {
+  list-style: none; }
+
+header {
+  width: auto;
+  height: auto;
+  text-align: center; }
+  header .catchphrase {
+    padding: 20px 50px;
+    background-color: #f6f6f6; }
+  header h2 {
+    margin-bottom: 15px;
+    font-size: xx-large; }
+  header h3 {
+    margin-bottom: 30px;
+    font-weight: lighter; }
+
+nav {
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  text-align: center; }
+  nav .location {
+    display: inline-block;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #eaeaea;
+    border-top: 2px solid #cacaca; }
+  nav i {
+    padding-right: 10px; }
+
+footer {
+  background-color: #353535;
+  margin: 0;
+  padding: 25px; }
+  footer img {
+    height: 20px;
+    filter: invert(100%); }
+  footer ul {
+    margin: 0;
+    padding: 0; }
+  footer li {
+    margin-top: 10px; }
+    footer li a {
+      text-decoration: none;
+      color: white; }
+    footer li i {
+      padding-right: 10px; }
+
+.step {
+  width: auto;
+  height: auto; }
+  .step h2 {
+    margin: 30px 20px; }
+  .step ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  .step li a {
+    display: inline-block;
+    width: 70%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 25px 25px;
+    border-radius: 18px;
+    text-decoration: none;
+    background-color: #f6f6f6;
+    color: black; }
+    .step li a:hover {
+      background-color: rgba(147, 86, 220, 0.1); }
+    .step li a:hover > i {
+      color: #9356DC; }
+  .step li i {
+    padding-right: 10px; }
+  .step-number {
+    text-align: left;
+    position: relative;
+    padding: 5px 10px;
+    margin: -15px;
+    color: white;
+    background-color: #9356DC;
+    border-radius: 25px; }
+
+.restaurant {
+  width: auto; }
+  .restaurant h2 {
+    margin: 30px 20px; }
 
 * {
   margin: 0;

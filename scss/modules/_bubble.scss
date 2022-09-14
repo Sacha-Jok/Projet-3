@@ -1,0 +1,53 @@
+.restaurant-bubble{
+    margin: 20px 20px;
+    border-radius: 20px;
+    box-shadow: $shadow;
+
+    & img{
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 140px;
+    }
+
+    & a{
+        color:black;
+        text-decoration: none;
+        }
+        
+    & .restaurant-bubble-sub{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-txt{
+            margin: 8px 0 8px 15px ;
+            & h4{
+                font-weight: 300;
+            }
+        }
+        & i{
+            margin-right: 15px;
+            color: lightgray;
+            font-size: 20px;
+            &:hover{
+                color: rgba($secondary-color, 0.4);
+            }
+        }
+    }
+    
+    & input[type=checkbox] {
+        display: none;
+        & + label {
+            display:inline-block;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        &:checked + label {
+            background: $gradient-color;
+            background-clip: text;
+        }
+        &:checked + label > i {
+            color: transparent;
+        }
+    }   
+}

@@ -1,20 +1,22 @@
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/variables";
+
 @import "./base/typography";
+
+@import "./modules/buttons";
+@import "./modules/img";
+@import "./modules/bubble";
+@import "./modules/list";
+
+
 
 @import "./layouts/header";
 @import "./layouts/nav";
 @import "./layouts/footer";
 
-@import "./modules/btn";
-@import "./modules/img";
-
 @import "./pages/home";
 
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/variables";
-
-
 * {margin: 0; padding: 0;}
-
 
 

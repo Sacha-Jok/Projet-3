@@ -1,0 +1,28 @@
+footer{
+    background-color: #353535;
+    margin: 0;
+    padding: 25px;
+
+    & img{
+        height: 20px;
+        filter: invert(100%)
+    }
+    & ul{
+        margin: 0;
+        padding: 0;
+    }
+    & li{
+        margin-top: 10px;
+        & a{
+            text-decoration: none;
+            color: white;
+        }
+    
+        & i{
+            padding-right: 10px;
+        }
+    }
+}
+
+
+

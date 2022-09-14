@@ -9,6 +9,7 @@
   "author": "Sacha",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^7.0.3"
+    "node-sass": "^7.0.3",
+    "sass": "^1.54.9"
   }
 }

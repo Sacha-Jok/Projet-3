@@ -1,0 +1,14 @@
+@mixin btn {
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    background: $gradient-color;
+ 
+    &:hover{
+        transition: 0.5s;
+        box-shadow: $shadow;
+        filter: brightness(105%);
+    }  
+}

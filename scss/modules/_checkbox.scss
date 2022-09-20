@@ -1,0 +1,15 @@
+input[type=checkbox] {
+    display: none;
+
+    & + label {
+        display:inline-block;
+        cursor: pointer;
+    }
+    &:checked + label {
+        background: $gradient-color;
+        background-clip: text;
+    }
+    &:checked + label > i {
+        color: transparent;
+    }
+}

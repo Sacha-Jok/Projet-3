@@ -2,7 +2,8 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 h1 {
-  font-family: 'Shrikhand', sans-serif; }
+  font-family: 'Shrikhand', sans-serif;
+  text-align: center; }
 
 .btn {
   color: white;
@@ -13,13 +14,24 @@ h1 {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC); }
   .btn:hover {
     transition: 0.5s;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     filter: brightness(105%); }
+
+input[type=checkbox] {
+  display: none; }
+  input[type=checkbox] + label {
+    display: inline-block;
+    cursor: pointer; }
+  input[type=checkbox]:checked + label {
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-clip: text; }
+  input[type=checkbox]:checked + label > i {
+    color: transparent; }
 
 .restaurant-bubble {
   margin: 20px 20px;
   border-radius: 20px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; }
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
   .restaurant-bubble img {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -42,18 +54,66 @@ h1 {
       font-size: 20px; }
       .restaurant-bubble .restaurant-bubble-sub i:hover {
         color: rgba(255, 121, 218, 0.4); }
-  .restaurant-bubble input[type=checkbox] {
-    display: none; }
-    .restaurant-bubble input[type=checkbox] + label {
-      display: inline-block;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out; }
-    .restaurant-bubble input[type=checkbox]:checked + label {
-      background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-      background-clip: text; }
-    .restaurant-bubble input[type=checkbox]:checked + label > i {
-      color: transparent; }
 
+.menu-bubble {
+  margin: 0 20px;
+  text-align: left; }
+  .menu-bubble h3 {
+    width: fit-content;
+    border-bottom: 3px inset #99E2D0; }
+  .menu-bubble-dish {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; }
+    .menu-bubble-dish h4 {
+      font-weight: 500;
+      font-size: large; }
+    .menu-bubble-dish h5 {
+      font-weight: 300;
+      font-size: medium; }
+    .menu-bubble-dish p {
+      height: fit-content; }
+    .menu-bubble-dish:hover .overlay {
+      visibility: visible; }
+    .menu-bubble-dish .overlay {
+      visibility: hidden;
+      margin-right: 0%;
+      height: 100%;
+      background-color: #99E2D0; }
+      .menu-bubble-dish .overlay i {
+        color: white;
+        text-align: center; }
+
+/* & a{
+        color:black;
+        text-decoration: none;
+        }
+        
+    & .restaurant-bubble-sub{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-txt{
+            margin: 8px 0 8px 15px ;
+            & h4{
+                font-weight: 300;
+            }
+        }
+        & i{
+            margin-right: 15px;
+            color: lightgray;
+            font-size: 20px;
+            &:hover{
+                color: rgba($secondary-color, 0.4);
+            }
+        }
+    }
+    */
 ul {
   list-style: none; }
 
@@ -71,21 +131,29 @@ header {
     margin-bottom: 30px;
     font-weight: lighter; }
 
-nav {
+.home-nav {
   width: auto;
   height: auto;
   margin-top: 20px;
   text-align: center; }
-  nav .location {
-    display: inline-block;
+  .home-nav .location {
     font-weight: bolder;
     width: 100%;
     margin-top: 20px;
     padding: 20px 0;
     background-color: #eaeaea;
     border-top: 2px solid #cacaca; }
-  nav i {
+  .home-nav i {
     padding-right: 10px; }
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px; }
+  .menu-nav i {
+    color: black;
+    font-size: x-large; }
 
 footer {
   background-color: #353535;
@@ -144,6 +212,32 @@ footer {
   width: auto; }
   .restaurant h2 {
     margin: 30px 20px; }
+
+.menu-page {
+  text-align: center; }
+  .menu-page h1 {
+    font-weight: 100; }
+  .menu-page .btn {
+    margin: 30px; }
+  .menu-page i {
+    margin-right: 15px;
+    color: lightgray;
+    font-size: 20px; }
+    .menu-page i:hover {
+      color: rgba(255, 121, 218, 0.4); }
+
+.menu-title-txt {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: -50px;
+  padding: 30px 15px;
+  background-color: white;
+  border-radius: 50px; }
+
+.menu-pic {
+  width: 100%; }
 
 * {
   margin: 0;

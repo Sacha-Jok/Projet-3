@@ -1,0 +1,35 @@
+.menu-page{
+    text-align: center;
+    & h1{
+        font-weight: 100;
+    }
+    & .btn{
+        margin: 30px;
+    }
+    & i{
+        margin-right: 15px;
+        color: lightgray;
+        font-size: 20px;
+        &:hover{
+            color: rgba($secondary-color, 0.4);
+        }
+    }
+}
+
+.menu-title{
+
+    &-txt{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: -50px;
+        padding: 30px 15px;
+        background-color: white;
+        border-radius: 50px;
+    }
+}
+  
+.menu-pic{
+        width: 100%;
+}

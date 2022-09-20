@@ -1,11 +1,10 @@
-nav{
+.home-nav{
     width: auto;
     height: auto;
     margin-top: 20px;
     text-align: center;
     
     & .location{
-        display: inline-block;
         font-weight: bolder;
         width: 100%;
         margin-top: 20px;
@@ -16,4 +15,17 @@ nav{
     & i{
         padding-right: 10px;
     }
+}
+
+.menu-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+
+    & i{
+        color: black;
+        font-size: x-large;
+    }
+
 }

@@ -34,20 +34,77 @@
             }
         }
     }
+}
+
+.menu-bubble {
+    margin: 0 20px;
+    text-align: left;
+    & h3 {
+      width: fit-content;
+      border-bottom: 3px inset $tertiary-color; 
+    }
     
-    & input[type=checkbox] {
-        display: none;
-        & + label {
-            display:inline-block;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
+    &-dish {
+        animation: slideUp 2s ;
+        -webkit-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+        opacity: 0;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 12px;
+        box-shadow: $shadow;
+        display: flex;
+        
+        & h4 {
+            font-weight: 500;
+            font-size: large; 
         }
-        &:checked + label {
-            background: $gradient-color;
-            background-clip: text;
+
+        & h5 {
+            font-weight: 300;
+            font-size: medium; 
         }
-        &:checked + label > i {
-            color: transparent;
+
+        & i {
+            transform: rotate(1turn);
+            visibility: hidden;
         }
-    }   
+       
+        &:hover .overlay {
+            width: 60px;
+            transition: width 1s;
+        }
+
+        &:hover i{
+            transition: 1s;
+            visibility: visible;
+            transform: rotate(0deg);
+
+        }
+
+        & .overlay {
+            margin: -10px -10px -10px 0;
+            width: 0;
+            overflow: hidden;
+            border-radius: 0 12px 12px 0;
+            background-color: $tertiary-color;
+            
+            & .checkmark {
+            color: white;
+            font-size: larger;
+            position: relative;
+            top: 33%; 
+            left: 32%;
+            }
+        }
+    }
+
+    .dish-price{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 10px;
+
+    }
 }

@@ -47,8 +47,8 @@
     
     &-dish {
         animation: slideUp 1s ;
-        -webkit-animation-fill-mode:forwards;
         animation-fill-mode:forwards;
+        -webkit-animation-fill-mode:forwards;
         opacity: 0;
         margin: 10px 0;
         padding: 10px;
@@ -58,7 +58,7 @@
         
         & h4 {
             font-weight: 500;
-            font-size: large; 
+            font-size: large;
         }
 
         & h5 {
@@ -71,22 +71,16 @@
             visibility: hidden;
         }
 
-        &-txt{
-            overflow: hidden;
-            text-overflow: ellipsis; 
-
-        }
-       
-        &:hover .overlay {
-            width: 60px;
-            transition: width 1s;
-        }
-
-        &:hover i{
-            transition: 1s;
-            visibility: visible;
-            transform: rotate(0deg);
-
+        &:hover{ 
+            & .overlay {
+                width: 60px;
+                transition: width 1s;
+            }
+            & i{
+                transition: 1s;
+                visibility: visible;
+                transform: rotate(0deg);
+            }
         }
 
         & .overlay {
@@ -113,6 +107,11 @@
         width: 100%;
         margin-right: 10px;
         font-weight: 500;
+    }
 
+    .dish-txt{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 }

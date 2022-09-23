@@ -1,3 +1,6 @@
+
+    /* Menu-page animation*/ 
+
 @keyframes slideUp{
     from{
         transform: translateY(40px);
@@ -24,3 +27,44 @@
 .menu-bubble-dish:nth-child(3) {animation-delay: 0.5s;}
 .menu-bubble-dish:nth-child(4) {animation-delay: 1s;}
 .menu-bubble-dish:nth-child(5) {animation-delay: 1.5s;}
+
+    /*Loader*/ 
+
+@keyframes dot-loader {
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@-webkit-keyframes dot-loader {
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes loader{
+    from{
+        visibility: visible;
+    }
+    80%{
+        opacity: 1;
+    }
+    to{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes loader{
+    from{
+        visibility: visible;
+    }
+    80%{
+        opacity: 1;
+    }
+    to{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+

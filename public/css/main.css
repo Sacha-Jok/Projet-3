@@ -129,20 +129,31 @@ input[type=checkbox] {
     display: flex; }
     .menu-bubble-dish h4 {
       font-weight: 500;
-      font-size: large; }
+      font-size: large;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
     .menu-bubble-dish h5 {
       font-weight: 300;
-      font-size: medium; }
+      font-size: medium;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+    .menu-bubble-dish p {
+      padding-left: 10px; }
     .menu-bubble-dish i {
       transform: rotate(1turn);
       visibility: hidden; }
     .menu-bubble-dish:hover .overlay {
-      width: 60px;
+      width: 59px;
       transition: width 1s; }
     .menu-bubble-dish:hover i {
       transition: 1s;
       visibility: visible;
       transform: rotate(0deg); }
+    .menu-bubble-dish:hover .dish-price {
+      width: 82%;
+      transition: width 1s; }
     .menu-bubble-dish .overlay {
       margin: -10px -10px -10px 0;
       width: 0;
@@ -154,7 +165,7 @@ input[type=checkbox] {
         font-size: larger;
         position: relative;
         top: 33%;
-        left: 32%; }
+        left: 35%; }
   .menu-bubble .dish-price {
     display: flex;
     align-items: center;
@@ -163,7 +174,6 @@ input[type=checkbox] {
     margin-right: 10px;
     font-weight: 500; }
   .menu-bubble .dish-txt {
-    text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap; }
 
@@ -240,8 +250,8 @@ footer {
   -webkit-animation-fill-mode: forwards; }
 
 .dot {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   margin: 0 15px;

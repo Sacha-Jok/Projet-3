@@ -59,27 +59,43 @@
         & h4 {
             font-weight: 500;
             font-size: large;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+    
         }
 
         & h5 {
             font-weight: 300;
             font-size: medium;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+    
+        }
+        
+        & p{
+            padding-left: 10px;
         }
 
         & i {
             transform: rotate(1turn);
             visibility: hidden;
         }
-
+        
         &:hover{ 
             & .overlay {
-                width: 60px;
+                width: 59px;
                 transition: width 1s;
             }
             & i{
                 transition: 1s;
                 visibility: visible;
                 transform: rotate(0deg);
+            }
+            & .dish-price{
+                width: 82%;
+                transition: width 1s;
             }
         }
 
@@ -95,7 +111,7 @@
             font-size: larger;
             position: relative;
             top: 33%; 
-            left: 32%;
+            left: 35%;
             }
         }
     }
@@ -110,7 +126,6 @@
     }
 
     .dish-txt{
-        text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
     }

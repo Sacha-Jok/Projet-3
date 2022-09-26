@@ -1,5 +1,6 @@
 .loader-container {
     position: fixed;
+    top: 0;
     z-index: 2;
     background: #fff;
     width: 100%;
@@ -41,12 +42,12 @@
         text-align: center;
     }
     & li{
+        margin-bottom: 20px;
         & a{
             display: inline-block;
             width: 70%;
             font-size: 18px;
             font-weight: bold;
-            margin-bottom: 20px;
             padding: 25px 25px;    
             border-radius: 18px;
             text-decoration: none;
@@ -66,7 +67,6 @@
         }
     }
     &-number{
-        text-align: left;
         position: relative;
         padding: 5px 10px;
         margin: -15px;
@@ -79,6 +79,41 @@
 .restaurant{
     width: auto;
     & h2{
-        margin: 30px 20px;
+        margin: 20px 20px;
     }
+}
+
+@media all and (min-width: 672px){
+    .step{
+        & ul{
+            display: flex;
+            justify-content: space-evenly;
+            & li{
+                width: 100%;
+            }
+        }
+        
+    }
+    .restaurant-bloc{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 480px;
+    }
+}
+
+@media all and (min-width: 990px){
+    .restaurant-bloc{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        height: 240px;
+        justify-content: space-around;
+    }
+    .restaurant-bubble{
+        width: 100%;
+        margin: 20px 10px;
+    }
+
+    
 }

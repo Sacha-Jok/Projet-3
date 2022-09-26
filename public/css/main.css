@@ -152,7 +152,7 @@ input[type=checkbox] {
       visibility: visible;
       transform: rotate(0deg); }
     .menu-bubble-dish:hover .dish-price {
-      width: 82%;
+      min-width: 82%;
       transition: width 1s; }
     .menu-bubble-dish .overlay {
       margin: -10px -10px -10px 0;
@@ -173,6 +173,8 @@ input[type=checkbox] {
     width: 100%;
     margin-right: 10px;
     font-weight: 500; }
+    .menu-bubble .dish-price .overlay {
+      justify-content: right; }
   .menu-bubble .dish-txt {
     overflow: hidden;
     white-space: nowrap; }

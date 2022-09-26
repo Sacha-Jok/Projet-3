@@ -94,7 +94,7 @@
                 transform: rotate(0deg);
             }
             & .dish-price{
-                width: 82%;
+                min-width: 82%;
                 transition: width 1s;
             }
         }
@@ -123,6 +123,9 @@
         width: 100%;
         margin-right: 10px;
         font-weight: 500;
+        & .overlay{
+            justify-content: right;
+        }
     }
 
     .dish-txt{

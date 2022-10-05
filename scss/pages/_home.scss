@@ -43,6 +43,7 @@
     }
     & li{
         margin-bottom: 20px;
+
         & a{
             display: inline-block;
             width: 70%;
@@ -53,6 +54,7 @@
             text-decoration: none;
             background-color: #eaeaea;
             color: black;
+            white-space: nowrap;
 
             &:hover{
                 background-color: rgba($primary-color, 0.1);
@@ -88,6 +90,7 @@
         & ul{
             display: flex;
             justify-content: space-evenly;
+            flex-wrap: wrap;
             & li{
                 width: 100%;
             }
@@ -99,6 +102,16 @@
         flex-direction: column;
         flex-wrap: wrap;
         height: 480px;
+    }
+}
+@media all and (min-width: 720px){
+    .step{
+        & ul{
+            & li{
+                min-width: 360px;
+                max-width: 33%;
+            }
+        }
     }
 }
 

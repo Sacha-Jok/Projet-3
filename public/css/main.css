@@ -295,7 +295,8 @@ footer {
       border-radius: 18px;
       text-decoration: none;
       background-color: #eaeaea;
-      color: black; }
+      color: black;
+      white-space: nowrap; }
       .step li a:hover {
         background-color: rgba(147, 86, 220, 0.1); }
       .step li a:hover > i {
@@ -318,7 +319,8 @@ footer {
 @media all and (min-width: 672px) {
   .step ul {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
     .step ul li {
       width: 100%; }
   .restaurant-bloc {
@@ -326,6 +328,11 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     height: 480px; } }
+
+@media all and (min-width: 720px) {
+  .step ul li {
+    min-width: 360px;
+    max-width: 33%; } }
 
 @media all and (min-width: 990px) {
   .restaurant-bloc {

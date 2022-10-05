@@ -134,3 +134,14 @@
         white-space: nowrap;
     }
 }
+
+@media all and (min-width: 672px){
+    .menu-bubble-sec{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .menu-bubble-dish{
+        width: 30%;
+    }
+}

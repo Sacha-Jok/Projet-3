@@ -24,5 +24,17 @@ footer{
     }
 }
 
+@media all and (min-width: 672px){
+    footer{
+        text-align: center;
+        
+        & ul{
+            display: flex;
+            justify-content: space-around;
+        }
+    } 
+    
+}
+
 
 

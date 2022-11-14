@@ -8,6 +8,8 @@ input[type=checkbox] {
     &:checked + label {
         background: $gradient-color;
         background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
     }
     &:checked + label > i {
         color: transparent;

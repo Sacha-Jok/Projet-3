@@ -112,7 +112,7 @@ input[type=checkbox] {
       color: lightgray;
       font-size: 20px; }
       .restaurant-bubble .restaurant-bubble-sub i:hover {
-        color: rgba(255, 121, 218, 0.4); }
+        color: #ff79da; }
 
 .menu-bubble {
   margin: 0 20px 20px 20px;
